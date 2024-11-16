@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>	
+<?import javafx.scene.layout.AnchorPane?>
+	
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controllers.CarLoanController">
+  <children>
+      <Label layoutX="37.0" layoutY="54.0" text="Type of Vehicle:" />
+      <RadioButton fx:id="carRadioButton" layoutX="189.0" layoutY="54.0" mnemonicParsing="false" text="Car" />
+      <RadioButton fx:id="truckRadioButton" layoutX="298.0" layoutY="54.0" mnemonicParsing="false" text="Truck" />
+      <RadioButton fx:id="vanRadioButton" layoutX="411.0" layoutY="54.0" mnemonicParsing="false" text="Van" />
+      <Label layoutX="37.0" layoutY="96.0" text="Age of Vehicle:" />
+      <RadioButton fx:id="newRadioButton" layoutX="189.0" layoutY="96.0" mnemonicParsing="false" text="New" />
+      <RadioButton fx:id="usedRadioButton" layoutX="298.0" layoutY="96.0" mnemonicParsing="false" text="Used" />
+      <Label layoutX="34.0" layoutY="138.0" text="Price of Vehicle:" />
+      <TextField fx:id="priceTextField" layoutX="189.0" layoutY="133.0" prefHeight="31.0" prefWidth="94.0" />
+      <Label layoutX="34.0" layoutY="178.0" text="Down Payment:" />
+      <TextField fx:id="downPaymentTextField" layoutX="189.0" layoutY="173.0" prefHeight="31.0" prefWidth="94.0" />
+      <Label layoutX="34.0" layoutY="218.0" text="Interest Rate:" />
+      <TextField fx:id="interestRateTextField" layoutX="189.0" layoutY="213.0" prefHeight="31.0" prefWidth="94.0" />
+      <Label layoutX="34.0" layoutY="262.0" text="Loan Payment Period:" />
+      <Slider fx:id="loanPeriodSlider" layoutX="213.0" layoutY="264.0" majorTickUnit="12.0" max="96.0" min="12.0" minorTickCount="12" prefHeight="45.0" prefWidth="278.0" showTickLabels="true" showTickMarks="true" />
+      <Label layoutX="28.0" layoutY="320.0" text="Loan Payment Frequency:" />
+      <RadioButton fx:id="weeklyRadioButton" layoutX="214.0" layoutY="320.0" mnemonicParsing="false" text="Weekly" />
+      <RadioButton fx:id="biWeeklyRadioButton" layoutX="329.0" layoutY="320.0" mnemonicParsing="false" text="Bi-Weekly" />
+      <RadioButton fx:id="monthlyRadioButton" layoutX="464.0" layoutY="320.0" mnemonicParsing="false" text="Monthly" />
+      <Label layoutX="28.0" layoutY="366.0" text="Estimated Fixed Rate Loan Payment:" />
+      <TextField fx:id="estimatedPaymentTextField" layoutX="290.0" layoutY="361.0" prefHeight="31.0" prefWidth="162.0" />
+      <Button fx:id="savedRatesButton" layoutX="139.0" layoutY="460.0" mnemonicParsing="false" onAction="#showSavedRatesDialog" text="Saved Rates" />
+	 <Button layoutX="319.0" layoutY="460.0" mnemonicParsing="false" onAction="#calculatePayment" text="Calculate" />
+	 <Button layoutX="493.0" layoutY="460.0" mnemonicParsing="false" onAction="#clearFields" text="Clear" />
+      <Label layoutX="174.0" layoutY="138.0" text="\$" />
+      <Label layoutX="292.0" layoutY="218.0" text="\%" />
+      <Label layoutX="174.0" layoutY="178.0" text="\$" />
+
+   </children>
+</AnchorPane>
